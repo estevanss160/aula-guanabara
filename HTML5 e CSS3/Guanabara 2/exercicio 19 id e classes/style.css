@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+h2 {
+    color: chocolate;
+}
+
+h2#com_id  {
+    color: rgb(37, 115, 115);
+}
+
+h2#mistura {
+    color: rgb(39, 194, 205);
+}
+
+.com_classe {
+    color: chartreuse;
+}
+
+.com_2classes {
+    background-color: black;
+}
+
+.fonte {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+

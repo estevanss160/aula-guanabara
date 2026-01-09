@@ -1,0 +1,106 @@
+.animada {
+    /* Estilo básico do botão */
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a propriedade transform */
+}
+
+.animada:hover {
+    /* Estado quando o mouse passa por cima */
+    transform: scale(1.1); /* Aumenta o botão em 10% */
+    /* ou */
+    /* transform: translateX(5px); Move o botão 5px para a direita */
+}
+
+
+.animada2 {
+    width: 60px;
+    height: 104px;
+    background-image: url('../arquivos/GIF/jane dançando 2.gif'); /* Imagem normal */
+    /*background-image:image-set( url('../arquivos/GIF/jane dançando 2.gif') 50x);*/
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image 0.5s ease; /* Transição para suavizar a mudança (opcional, pode não funcionar bem em todos os browsers) */
+}
+
+.animada2:hover {
+    background-image: url('../arquivos/GIF/jane soquinho.gif'); /* Segunda imagem (com movimento ou diferente) */
+    transform: scale(2.5, 1);
+}
+
+.animada20 {
+    width: 100px;
+    height: 100px;
+    background-image: url('../arquivos/GIF/jane dançando'); /* Imagem normal */
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image 0.1s ease; /* Transição para suavizar a mudança (opcional, pode não funcionar bem em todos os browsers) */
+}
+
+.animada20:hover {
+    background-image: url('../arquivos/GIF/jane soquinho.gif'); /* Segunda imagem (com movimento ou diferente) */
+}
+
+.livro1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('../arquivos/IMAGENS/imagem (.png)/livro aberto png.png'); /* Imagem normal */
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image 0.3s ease; /* Transição para suavizar a mudança (opcional, pode não funcionar bem em todos os browsers) */    
+}
+
+.livro1:hover {
+    background-image: url('../arquivos/GIF/abrindo livro png.gif'); /* Segunda imagem (com movimento ou diferente) */
+}
+
+.livro2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url('../arquivos/IMAGENS/imagem (.png)/livro aberto png.png'); /* Imagem normal */
+    background-size: cover;
+    cursor: pointer;
+    transition: background-image 0.3s ease; /* Transição para suavizar a mudança (opcional, pode não funcionar bem em todos os browsers) */    
+}
+
+.livro2:hover {
+    background-image: url('../arquivos/GIF/abrindo livro png.gif'); /* Segunda imagem (com movimento ou diferente) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Define a animação de "tremor" */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.animated-button-shake {
+    /* Estilo básico */
+    padding: 10px;
+    background-color: lightgray;
+    /* ... outros estilos ... */
+}
+
+.animated-button-shake:hover {
+    /* Aplica a animação apenas no hover */
+    animation: shake 0.5s infinite; /* Nome da anim, duração, repetição infinita */
+}

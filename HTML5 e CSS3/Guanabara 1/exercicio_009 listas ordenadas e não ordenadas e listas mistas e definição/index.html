@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas continuação</title>
+</head>
+<body>
+    <h1>Trabalhando com listas:</h1>
+    
+    <h2>Listas ordenadas(A ordem importa)</h2>
+    <p>usando o comando &lt;ol&gt; e &lt;li&gt; posso criar uma lista numérica por exemplo:
+    <pre>    &lt;ol&gt;
+        &lt;li&gt;acordar&lt;/li&gt;
+        &lt;li&gt;desligar despertador&lt;/li&gt;
+        &lt;li&gt;levantar&lt;/li&gt;
+        &lt;li&gt;ir ao banheiro&lt;/li&gt;
+    &lt;/ol&gt;</pre>
+    <ol>
+        <li>acordar</li>
+        <li>desligar despertador</li>
+        <li>levantar</li>
+        <li>ir ao banheiro</li>
+    </ol>
+    também posso colocar uma configuração específica para ordenar minha lista usando o comando <br>&lt;ol type="1, A, a, I ou i"&gt; seguido do comando &lt;li&gt; por exemplo:
+    <pre>    &lt;ol type="A"&gt;
+        &lt;li&gt;acordar&lt;/li&gt;
+        &lt;li&gt;desligar despertador&lt;/li&gt;
+        &lt;li&gt;levantar&lt;/li&gt;
+        &lt;li&gt;ir ao banheiro&lt;/li&gt;
+    &lt;/ol&gt;</pre>
+    <ol type="A">
+        <li>acordar</li>
+        <li>desligar despertador</li>
+        <li>levantar</li>
+        <li>ir ao banheiro</li>
+    </ol></p>
+
+    <h2>Listas não ordenadas:</h2>
+    <p>para criar uma lista não ordenada(A ordem não importa) basta usar o comando &lt;ul&gt; seguido do comando &lt;li&gt; segue exemplo:
+    <pre>
+        &lt;ul&gt;
+            &lt;li&gt;estudar khan academy&lt;/li&gt;
+            &lt;li&gt;estudar Python&lt;/li&gt;
+            &lt;li&gt;estudar <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e Javascript&lt;/li&gt;
+            &lt;li&gt;estudar <abbr title="Amazon Web Services">AWS</abbr>&lt;/li&gt;
+        &lt;/ul&gt;
+    </pre>
+    <ul>
+        <li>acordar</li>
+        <li>desligar despertador</li>
+        <li>levantar</li>
+        <li>ir ao banheiro</li>
+    </ul>
+    também posso colocar uma configuração específica para ordenar minha lista usando o comando <br>&lt;ul type="disc, circle e square"&gt; seguido do comando &lt;li&gt; por exemplo:
+    <pre>    &lt;ul type="circle"&gt;
+        &lt;li&gt;acordar&lt;/li&gt;
+        &lt;li&gt;desligar despertador&lt;/li&gt;
+        &lt;li&gt;levantar&lt;/li&gt;
+        &lt;li&gt;ir ao banheiro&lt;/li&gt;
+    &lt;/ul&gt;</pre>
+    <ul type="circle">
+        <li>acordar</li>
+        <li>desligar despertador</li>
+        <li>levantar</li>
+        <li>ir ao banheiro</li>
+    </ul>
+    </p>  
+    
+    <h2>Minhas linguagens(De programação) favoritas:</h2>
+    <p>aqui estou criando uma lista ordenada(A ordem importa) dentro de outra lista usando os seguintes comandos:
+    <br> 
+    &lt;ol&gt;, &lt;li&gt; e &lt;ol type="1, A, a, I ou i"&gt; segue exemplo da lista:
+    <pre>    &lt;ol&gt;
+        &lt;li&gt;Antigas&lt;li&gt;
+        &lt;ol type="A"&gt;
+            &lt;li&gt;não tem&lt;/li&gt;
+            &lt;li&gt;pyth...nem é antiga&lt;/li&gt;
+            &lt;li&gt;já falei que odeio programação?kkk(zoera)&lt;/li&gt;
+            &lt;li&gt;java...não mesmo&lt;li&gt;
+            &lt;li&gt;<mark style="background-color:chartreuse">não tem só que verde</mark>&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/ol&gt;
+</pre>
+    <ol>  
+        <li>Antigas</li>
+        <ol type="A">
+            <li>não tem</li>
+            <li>pyth...nem é antiga</li>
+            <li>já falei que odeio programação?kkk(zoera)</li>
+            <li>java...não mesmo</li>
+            <li><mark style="background-color:chartreuse">não tem só que verde</mark></li>
+        </ol>
+    </ol>
+    exemplo da lista com aumento e também com o comando: 
+    <br>
+    &lt;ol type="A" start="1...até onde quiser"&gt;
+    <br>
+    que basicamente pode iniciar a ordenação de um ponto específico:
+    <pre>    &lt;ol&gt;
+        &lt;li&gt;Antigas&lt;li&gt;
+        &lt;ol type="A"&gt;
+            &lt;li&gt;não tem&lt;/li&gt;
+            &lt;li&gt;pyth...nem é antiga&lt;/li&gt;
+            &lt;li&gt;já falei que odeio programação?kkk(zoera)&lt;/li&gt;
+            &lt;li&gt;java...não mesmo&lt;li&gt;
+            &lt;li&gt;<mark style="background-color:chartreuse">não tem só que verde</mark>&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;li&gt;Novas&lt;li&gt;
+        &lt;ol type="A" start="5"&gt;
+            &lt;li&gt;mesma coisa&lt;/li&gt;
+            &lt;li&gt;sql?&lt;/li&gt;
+            &lt;li&gt;lembro de nenhuma&lt;/li&gt;
+            &lt;li&gt;trágico&lt;li&gt;
+        &lt;/ol&gt;
+    &lt;/ol&gt;
+    </pre>
+    <ol>  
+        <li>Antigas</li>
+        <ol type="A">
+            <li>não tem</li>
+            <li>pyth...nem é antiga</li>
+            <li>já falei que odeio programação?kkk(zoera)</li>
+            <li>java...não mesmo</li>
+            <li><mark style="background-color:chartreuse">não tem só que verde</mark></li>
+        </ol>
+        <li>Novas</li>
+        <ol type="A" start="5">
+            <li>mesma coisa</li>
+            <li>sql?</li>
+            <li>lembro de nenhuma</li>
+            <li>trágico</li>
+        </ol>
+    </ol>
+    posso misturar ordenada com não ordenada usando os seguintes comandos &lt;ol&gt;, &lt;li&gt; e &lt;ul&gt;,<br>usei square e circle só para testar, segue exemplo:
+    <pre>    &lt;ol&gt;
+        &lt;li&gt;Antigas&lt;li&gt;
+        &lt;ul type="circle"&gt;
+            &lt;li&gt;não tem&lt;/li&gt;
+            &lt;li&gt;pyth...nem é antiga&lt;/li&gt;
+            &lt;li&gt;já falei que odeio programação?kkk(zoera)&lt;/li&gt;
+            &lt;li&gt;java...não mesmo&lt;li&gt;
+            &lt;li&gt;<mark style="background-color:chartreuse">não tem só que verde</mark>&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;li&gt;Novas&lt;li&gt;
+        &lt;ul type="square"&gt;
+            &lt;li&gt;mesma coisa&lt;/li&gt;
+            &lt;li&gt;sql?&lt;/li&gt;
+            &lt;li&gt;lembro de nenhuma&lt;/li&gt;
+            &lt;li&gt;trágico&lt;li&gt;
+        &lt;/ul&gt;
+    &lt;/ol&gt;
+    </pre>
+    <ol>  
+        <li>Antigas</li>
+        <ul type="circle">
+            <li>não tem</li>
+            <li>pyth...nem é antiga</li>
+            <li>já falei que odeio programação?kkk(zoera)</li>
+            <li>java...não mesmo</li>
+            <li><mark style="background-color:chartreuse">não tem só que verde</mark></li>
+        </ul>
+        <li>novas</li>
+        <ul type="square">
+            <li>mesma coisa</li>
+            <li>sql?</li>
+            <li>lembro de nenhuma</li>
+            <li>trágico</li>
+        </ul>
+    </ol>
+    RESUMINDO: posso colocar lista dentro de lista usando os comandos 
+    <br>
+    &lt;ol&gt;, &lt;li&gt; sucessivamente ou 
+    <br>
+    &lt;ul&gt;, &lt;li&gt; sucessivamente e 
+    <br>
+    também com suas variações que seria 
+    <br>
+    &lt;ol type="A" start="1...até onde quiser"&gt;
+    <br>
+    &lt;ul type="disc, circle e square"&gt;
+    </p>
+
+    <h2>Lista de definições</h2>
+    <p>usando o comando &lt;dl&gt;, &lt;dt&gt; e &lt;dd&gt;
+    posso fazer marcações, segue exemplo: <br>
+    <pre>    &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;dt&gt;
+        &lt;dd&gt;Linguagem de marcação para a criação do conteudo de um site.&lt;dd&gt;
+        &lt;dt&gt;CSS&lt;dt&gt;
+        &lt;dd&gt;Linguagem de marcação para criação do design de um site.&lt;dd&gt;
+        &lt;dt&gt;JavaScript&lt;dt&gt;
+        &lt;dd&gt;Linguagem de programação para a criação de interatividade de um site.&lt;dd&gt;
+    &lt;/dl&gt;</pre>
+    <dl>
+        <dt>HTML:</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS:</dt>
+        <dd>Linguagem de marcação para criação do design de um site.</dd>
+        <dt>JavaScript:</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    </p>
+</body>
+</html>

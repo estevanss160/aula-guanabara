@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+   
+    <h2>Código-fonte</h2>
+    <p>esta frase não contem um espaçamento uniforme</p>
+    <p><code>esta frase contem um espaçamento uniforme usando o seguinte comando: 
+    <br>
+    &lt;code&gt;texto para espaçamento uniforme&lt;/code&gt;</code></p>
+    <code>
+        usando apenas a formatação &lt;code&gt; não <br>é possível demonstrar o aninhamento/endentação conforme exemplo:
+        <br>
+        num = in(input("Digite um número: "))
+        if(num % 2 == 0):
+            print(f"O número {num} é par")
+        else:
+            print(f"O número {num} é ímpar")
+        print("Fim do programa")
+    </code>
+    <br>
+    <pre>
+    <code>
+mas usando o comando &lt;code&gt; para manter o código uniforme e o comando &lt;pre&gt; antes de &lt;code&gt; <br>é possível demonstrar o aninhamento/endentação conforme exemplo: <br>
+num = in(input("Digite um número: "))
+if(num % 2 == 0):
+    print(f"O número {num} é par")
+else:
+    print(f"O número {num} é ímpar")
+print("Fim do programa")
+    </code>
+    </pre>
+    o comando "code" não é obrigatório para manter o aninhamento
+   
+    <h2>Citações simples:</h2>
+    <p>Para fazer citações simples basta usar o comando &lt;q&gt; que cria aspas duplas por exemplo: <br>De acordo com a frase: <q><b>zzz</b> é melhor kkkk</q>
+    <br>
+    &lt;q&gt;texto para citação&lt;/q&gt;
+    </p>
+
+    <h2>Citações completas:</h2>
+    <p>Agora usarei o comando &lt;blockquote cite="link da fonte"&gt; para colocar a seguinte frase como uma citação fora do comando &lt;p&gt; e também poderia usar apenas o comando &lt;blockquote&gt; segue exemplo:</p>
+    <blockquote cite="https://www.reddit.com/r/ZenlessZoneZero/comments/1ehsexu/whats_your_favourite_out_of_context_line_from/?tl=pt-br">
+    As melhores frazes de <b>zzz</b> são: as de duplo sentido kkkk &#x1F60F; segue o link: <br>https://www.reddit.com/r/ZenlessZoneZero/comments/1ehsexu/whats_your_favourite_out_of_context_line_from/?tl=pt-br <br>nesse caso coloquei o link no comentário e no código, mas até o momento não é "clicável"
+    </blockquote>
+
+    <h2>Abreviações:</h2>
+    <p>Estas abreviações por exemplo: HTML e CSS podem ser acompanhadas com seus significados se usar o comando 
+    <br>
+    &lt;abbr title="significado da abreviação">ABREVIAÇÃO&lt;/abbr&GT; por exemplo: 
+    <br>
+    &lt;abbr title="HyperText Markup Language">HTML&lt;/abbr&GT; e aplicando esse comando você poderá passar o mause na palavra sublinhada para verificar seu significado, segue exemplo: 
+    <br>
+    <abbr title="HyperText Markup Language">HTML</abbr></p>
+
+    <h2>Texto invertido:</h2>
+    <p>Texto invertido usando o comando &lt;bdo dir="rlt ou ltr">texto que será invertido&lt;/bdo&gt;. Segue exemplo:
+    <br>
+    <bdo dir="rtl">texto invertido</bdo>
+    </p>
+</body>
+</html>

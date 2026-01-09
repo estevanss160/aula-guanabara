@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Site de exemplo CSS3</h1>
+        <h2>Explicações:</h2>
+        <p>neste exemplo foi alterado a fonte dos textos, as cores de cada texto(h1, h2),
+            o fundo do site e também o fundo dos textos tudo isso usando CSS3. Para utilizar
+            o CSS3 nesta página foi criado um arquivo chamado "style.css" na mesma pasta onde encrontra-se 
+            o arquivo "html" do site, mas lembrando que poderia ser colocado em uma subpasta também. 
+            Esse arquivo "css" contém todas as configurações de estilo do site e para chamar esse arquivo 
+            use o seguinte comando dentro do "head" e abaixo de "title":
+            <br>
+            &lt;link rel="stylesheet" href="style.css"&gt;
+            <br>
+            <br>
+            o comando "&lt;link&gt;" é uma tag no "HTML5" é o que chama recursos externos.
+            <br>
+            <br>
+            o comando (rel="..."), dentro de "&lt;link&gt;", serve para especificar qual é o tipo do arquivo e 
+            "stylesheet" fala qual é o tipo de arquivo que o "href" vai usar que nesse caso é uma folha de estilos ou 
+            uma folha de configuração para a pagina "html" que tiver com esse "link" no "head".
+            <br>
+            <br>
+            o comando (href="..."), dentro de "&lt;link&gt;", expecífica qual o caminho do arquivo externo e "style.css"
+            indica que está no mesmo diretorio do html.
+            <br>
+            <br>
+            Em resumo, o comando diz ao navegador: "Vá buscar o arquivo chamado style.css e use-o como a folha de estilos para estilizar esta página". 
+        </p>
+        <br>
+        <br>
+    </main>
+<h1>Comandos usados no arquivo "style.css"</h1>
+<pre>
+@charset "utf-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+    height: auto;
+}
+
+body {
+    background-image: linear-gradient(to right, #7D79F2, #BCF2BB);
+}
+
+main {
+    background-color: #aeacf281;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(87, 84, 170, 0.662);
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #2A26A6;
+    text-align: center;
+    text-shadow: 1px 1px 20px #403aff81;
+}
+
+pre {
+    width: 10%;
+    margin: auto;
+}
+
+h2{
+    color: #7bff3e;
+}
+
+p {
+    text-align: justify;
+    color: #4b4a5f;
+}
+</pre>
+
+<h2>@charset "utf-8";</h2>
+<p>
+    o comando "@charset "utf-8";", na primeira linha do css, tem haver com o idioma então deixarei essa explicação para depois.
+</p>
+
+<h2>* {}</h2>
+<p>
+    o comando "*" é o que seleciona todos os elementos dentro desse arquivo.
+</p>
+
+<h2>font-family: ...;</h2>
+<p>
+    o comando "font-family: ...;", dentro das chaves, serve para indicar qual fonte deve ser usada, mas no caso foi inseridas três e
+    o motivo disso é redundância no sistema, pois a ordem é a seguinte:
+    <br>
+    primeiro ARIAL se por um acaso ela não funcionar pode ser chamada a próxima
+    que nesse caso é HELVETICA e se mesmo assim nenhuma funcionar tem uma carta na manga que é o SANS-SERIF que usa a fonte padrão do sistema.
+</p>
+
+<h2>height: ...;</h2>
+<p>
+    o comando "height:", dentro das chaves, vai definir a altura que os elementos vão ficar e o comando "auto" fala o quão alto, mas poderia ter
+    <br>
+    nas seguintes unidades de medida: %, px, etc.
+</p>
+
+<h2>body {}</h2>
+<p>
+    o comando "body", no arquivo do css, referece ao "body" do "html"/////////////////////////////////////////////////////////////muita coisa para escrever
+</p>
+</body>
+</html>

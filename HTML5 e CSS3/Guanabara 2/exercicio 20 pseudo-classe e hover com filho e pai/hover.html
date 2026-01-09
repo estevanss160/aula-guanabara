@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:HOVER</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div#div1 > div#tentativaid {
+            display: none;
+        }
+
+        div#div1:hover > div#tentativaid {
+            width: 300px;
+            display: block;
+        }
+
+        div#tentativadiv {
+            display: none;
+            position: absolute;
+            width: 98%;
+            height: 95%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        div#tentativadiv iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        div#tentativaid:hover > div#tentativadiv {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div id="div1">
+        passe o mouse aqui:
+        <br>
+        <br>
+        <div id="tentativaid">olha o carro da rua passando no seu ovo
+            <div id="tentativadiv">
+                 <iframe src="../exercicio 16 cores em CSS/cor3.html" title="cor3"></iframe>
+            </div>
+        </div>
+    </div>
+    <p>só posso dizer que tudo foi uma alucinação e que usar "div > p" significa que p é a filha de div e é possivel esconder tudo usando 
+        <br>
+        "div:hover > p"
+        <br>
+        <br>
+        toma seu codigo:
+    </p>
+    <pre>
+    &lt;style&gt;
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            width: 300px;
+            display: block;
+        }
+
+        div#tentativadiv{
+            display: none;
+            position: absolute;
+            width: 98%;
+            height: 95%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            z-index: 10;
+        }
+
+        div#tentativadiv iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        p#tentativaid:hover + div#tentativadiv  {
+            display: block;
+        }
+    &lt;/style&gt;
+    </pre>
+</body>
+</html>

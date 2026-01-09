@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family: militar;
+            src: url('FONTES/Top Secret.ttf') format(truetype);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: banda;
+            src: url('FONTES/evanescent.ttf') format(truetype);
+            font-weight: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: coca;
+            src: url('FONTES/Colagraph8-7-Regular.ttf') format(truetype);
+            font-weight: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: japa;
+            src: url('FONTES/JapanRich-Regular.otf') format(opentype),
+            url('FONTES/JapanRich-Regular.ttf') format(truetype);
+            font-weight: normal;
+            font-weight: normal;
+        }
+        
+        h1 {
+            font-family: militar;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: banda;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-family: japa;
+            font-size: 2em;
+            font-weight: normal;
+        }
+        
+        p {
+            font-family: coca;
+            font-size: 2em;
+            font-weight: normal;
+        }
+        /*
+        Tipos de format():
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-att (Apple advanced typography)
+        - svg
+        */
+    </style>
+</head>
+<body>
+    <h1>[USANDO FONTES QUE BAIXEI]</h1>
+    <h2>Neste exercicio foi usado o seguinte comando, com fonte do Evanescencç SQN:</h2>
+    <pre>
+    &lt;style&gt;
+        @font-face {
+            font-family: militar;
+            src: url('FONTES/Top Secret.ttf') format(truetype);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: banda;
+            src: url('FONTES/evanescent.ttf') format(truetype);
+            font-weight: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: coca;
+            src: url('FONTES/Colagraph8-7-Regular.ttf') format(truetype);
+            font-weight: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: japa;
+            src: url('FONTES/JapanRich-Regular.otf') format(opentype),
+            url('FONTES/JapanRich-Regular.ttf') format(truetype);
+            font-weight: normal;
+            font-weight: normal;
+        }
+        
+        h1 {
+            font-family: militar;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: banda;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-family: japa;
+            font-size: 2em;
+            font-weight: normal;
+        }
+        
+        p {
+            font-family: coca;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        /*
+        Tipos de format():
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-att (Apple advanced typography)
+        - svg
+        */
+    &lt;/style&gt;
+    </pre>
+    <h3>Explicacão do "@font-face {}":</h3>
+    <p>
+    Neste exemplo foi usado o comando "@font-face {}" dentro de "style" no "head" deste "html",
+    ele serve como um "@import", mas neste caso ele está pegando algo especifico como uma fonte 
+    e é uma fonte que baixei. O comando funciona em três partes a primeira é o "font-family: ..."
+    onde será colocado o apelido/nome dessa fonte para que você possa chamar com esse apelido/nome
+    o segundo passo é dizer onde o "CSS" pode buscar essa fonte usando o seguinte comando: "src: url('...')", a terceira parte
+    é o "format(...)" que informa qual é o tipo do arquivo (truetype ou opentype...)
+    <br>
+    <br>
+    obeserve que o "font-family: japa" tem mais de um "url" e o motivo disso é que existem vários tipos de "format(...)" 
+    por exemplo:
+    </p>
+    <pre>
+        Tipos de format():
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-att (Apple advanced typography)
+        - svg
+        */
+    </pre>
+    <p>
+    o motivo de colocar os dois tipos de "format" é que se o navegador que for abrir esse arquivo "html" não suportar um então terá o outro, mas
+    e se não suportar nunhum? isso é uma ótima pergunta.
+    <br>
+    <br>
+    lembre também quem é possivel usar o comando "@font-face" e o comando "@import" no mesmo arquivo CSS
+    </p>
+</body>
+</html>

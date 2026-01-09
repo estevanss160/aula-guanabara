@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>este é um exemplo de como a imagem pode mudar de acordo com o tamanho definido pelo navegador ou usuário, usando o seguinte comando e lembrando que as imagens estão em uma subpasta:
+    <br>
+    <br>
+    O comando "max-width" vai determinar o momento em que a imagem deve aparecer dependendo do tamanho atribuido
+    <br>
+    <pre>
+    &lt;picture&gt;
+        &lt;source media="(max-width: tamanho da imagempx)" srcset="nome da pasta/nome do arquivo(.png, .webp, .jpg ou .jpeg)" type="image/(png, webp, jpg ou jpeg)"&gt;
+        &lt;img src="nome da pasta/nome do arquivo(.png, .webp, .jpg ou .jpeg)" alt="imagem flexível"&gt;
+    &lt;/picture&gt;
+    </pre>
+    Lembrando que o último comando "img" é para a maior imagem e o "source" é para as outras medidas que a página será configurada
+    <br>
+    <br>
+    <img src="IMAGENS/jane.favicon.ico" alt="icone jane">segue exemplo de três tamanhos:
+    <br>
+    <pre>
+    &lt;picture&gt;
+        &lt;source media="(max-width: 900px)" srcset="IMAGENS/jane_doe_adolescente_320px.jpg" type="image/jpg"&gt;
+        &lt;source media="(max-width: 1720px)" srcset="IMAGENS/jane_doe_de_folga_720px.jpg" type="image/jpg"&gt;
+        &lt;img src="IMAGENS/jane_doe_1920px.jpg" alt="jane doe"&gt;
+    &lt;/picture&gt;
+    </pre>
+    <picture>
+        <source media="(max-width: 900px)" srcset="IMAGENS/jane_doe_adolescente_320px.jpg" type="image/jpg">
+        <source media="(max-width: 1720px)" srcset="IMAGENS/jane_doe_de_folga_720px.jpg" type="image/jpg">
+        <img src="IMAGENS/jane_doe_1920px.jpg" alt="jane doe">
+    </picture>
+    </p>
+    <h1>Reproduzindo áudio</h1>
+    <p>Nesta reprodução não será possível baixar o áudio "ainda" então contente-se com a reprodução e duas verções da música com seus comandos, segue exemlpo:
+    <br>
+    <pre>
+        o uso do "metadata" é melhor para desempenho do site.
+        &lt;audio preload="auto, metadata ou none" autoplay controls loop&gt;
+             &lt;source src="nome da pasta/nome da musica(.mp3, .ogg ou .wav)" type="audio/(mpeg, ogg ou wav)"&gt;
+        &lt;audio&gt;
+    </pre>
+    <br>
+versão masculina:
+    <br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Golden Sign _m.mp3" type="audio/mpeg">
+        Infelizmente seu navegador é uma porcaria e não suportou o áudio.
+    </audio>
+    <br>
+    versão feminina:
+    <br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Golden-Sign-_f.mp3" type="audio/mpeg">
+        Sua lancheira não suporta um simples áudio
+    </audio>
+    </p>
+</body>
+</html>

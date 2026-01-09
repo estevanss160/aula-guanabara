@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente/degradê em CSS</title>
+    <style>
+        /* body {
+            background-color: orange;
+        }*/
+        * {
+            height: auto;
+        }
+
+        body {
+            background-image: linear-gradient(to left, #3198e2, #6d59c0, #b93590, #e33f5f, #fdd579);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando esta benção</h1>
+    <p>para configurar essas cores no formato de gradiente ou degradê
+        <br>
+        foi usado o seguinte comando em CSS no "head" e após o "title" da página:
+    <pre>
+    * &lbrace;
+        height: auto;
+    &rbrace;
+    body &lbrace;
+        background-image: linear-gradient(to right, #3198e2, #6d59c0, #b93590, #e33f5f, #fdd579);
+        background-attachment: fixed;
+    &rbrace;
+    </pre>
+    o comando "*", antes das chaves, significa que todos os elementos do html foi selecionado
+    <br>
+    <br>
+    o comando "height: auto;", dentro das chaves, define a altura de todos os elementos automaticamente e quando falo
+    altura estou falando da posição na página.
+    <br>
+    <br>
+    o comando "body", antes das chaves, que foi colocado no head do html5 seleciona todos os elementos do "&lt;body&gt;"
+    que está após o head É IMPORTANTE SABER A DIFERENÇA
+    <br>
+    <br>
+    o comando "background-image: linear-gradient(...)", dentro das chaves, é o que criará o gradiente ou degradê da
+    página com as cores que você selecionar, mas se a intenção
+    <br>
+    não é criar um gradiente ou degradê então criar uma cor sólida é o seguinte comando: background-color: nome da cor
+    em inglês;
+    <br>
+    <br>
+    o comando "to right", dentro de "linear-gradient", serve para especificar que o degradê ou gradiente comece da
+    esquerda para direita e pode ser mudado para outras formas por exemplo
+    <br>
+    se trocar o "linear-gradient" por "radial-gradient(circle...)"
+    <br>
+    <br>
+    o comando "background-attachment: fixed;", dentro das chaves, controla a imagem ou gradiente de fundo e o comando
+    fixed mantem o fundo em estado estacionário criando
+    <br>
+    um efeito <i>paralaxe</i>
+    </p>
+</body>
+
+</html>

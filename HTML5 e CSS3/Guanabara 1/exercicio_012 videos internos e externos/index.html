@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente.</h1>
+    <p>Os vídeos a seguir estão hospedados localmente em uma subpasta e usando o seguinte comando: 
+    <br>
+    &lt;video src="nome da pasta/nome do arquivo(.mp4 ou outros arquivos)" width="escolher o tamanho do vídeo" controls&gt;
+    <br>
+    Abaixo segue um exemplo do código e vídeo: 
+    <br>
+    &lt;video src="videos/Golden_Sign _F-Sān-Z_STUDIO_x_LHOYO-MiX_English_Lyrics_ZZZ_Gacha_Ost.mp4" width="500" controls&gt;
+    <br>
+    <video src="videos/Golden_Sign _F-Sān-Z_STUDIO_x_LHOYO-MiX_English_Lyrics_ZZZ_Gacha_Ost.mp4" width="500" controls></video>
+    <br><br>
+    existe uma estrutura que garante que se meu vídeo ou arquivo só de audio não funcionem ele irá reproduzir outro formato do mesmo arquivo por exemplo: tenho um audio em ".mp3" e o navegador atual não tem suporte para tal então ele pode abrir o mesmo áudio em outro formato se eu tiver colocado isso no código e o mesmo vale para vídeos, a estrutura que pela lógica parece um "if" e "else" é a seguinte:
+    <br>
+    <pre>
+        imagine o source sendo o "if" e o comentário sendo o "else" e que posso colocar vários source 
+        para ir testando vários formatos até que infelizmente chegue a última opção que seria o comentário
+    &lt;video  width="escolher o tamanho do vídeo" controls&gt;
+        &lt;source src="nome da pasta/nome do arquivo(.mp4 ou outros arquivos)" type="video/(tipo do arquivo)"&gt;
+        &lt;p&gt;seu navegador não é compatível&lt;/p&gt;
+    &lt;/video&gt;
+    </pre>
+    
+    Agora irei colocar um outro video usando os comandos &lt;video&gt; e &lt;source&gt;, porém desta vez o video terá uma "capa" usando o comando "poster", segue exemplo:
+    <br>
+    <pre>
+     &lt;video  width="escolher o tamanho do vídeo" poster="nome da pasta/nome da imagem para capa" controls&gt;
+        &lt;source src="nome da pasta/nome do arquivo(.mp4 ou outros arquivos)" type="video/(tipo do arquivo)"&gt;
+        &lt;p&gt;seu navegador não é compatível&lt;/p&gt;
+    &lt;/video&gt;
+    </pre>
+    <video width="500" poster="imagens/yeahh-that-shining-golden-sign-v0-awk96b89yydf1.webp" controls>
+        <source src="videos/Golden Sign _M  - Sān-Z STUDIO x HOYO-MiX English Lyrics _ ZZZ Gacha Ost.mp4" type="video/mp4">
+        <source src="videos/Golden Sign _F - Sān-Z STUDIO x HOYO-MiX English Lyrics  ZZZ Gacha Ost.mp4" type="video/mp4">
+        infelizmente sua torradeira não suporta
+    </video>
+    </p>
+    <h1>Inserindo videos do YouTube:</h1>
+    <p>Para colocar vídeos do YouTube no site é preciso ir ao vídeo e usar a opção de compartilhar e em seguida selecionar a opção incorporar para pegar o código e inserir no site, mas pode ocorrer problemas como por exemplo "erro 153" então você terá que selecionar a opção "Ativar o modo de privacidade aprimorada." antes de copiar o código para o site e se o problema percistir delete a seguinte parte do código "referrerpolicy="strict-origin-when-cross-origin", no primeiro video não foi preciso deletar essa parte, mas no segundo foi.    
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ejSQWaHxkRY?si=e7ctAGw4Fwuhj0lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VSbjmyPqajo?si=rEBYvzkO9QAcraRF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+    </p>
+</body>
+</html>

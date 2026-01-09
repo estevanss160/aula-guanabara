@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exemplo com ou sem id</h1>
+    <h2 id="com_id">exemplo com id</h2>
+    <p>o formato com id serve para chamar algum elemento específico do "html" e aplicar um atributo e assim separando-o dos que são do mesmo elemento, 
+    mas se mais de um elemento tiver que usar o mesmo atributo no "html" então usamos as "classes" e para usar o id no "html" deve ser feito da seguinte forma:
+    <br>
+    <br>
+    &lt;h2 id="nome do seu id"&gt;frase que receberá o atributo vindo do "css"&lt;/h2&gt;
+    <br>
+    &lt;h2 id="com_id"&gt;exemplo com id&lt;/h2&gt;
+    <br>
+    <br>
+    para chamar um id no "css" deve-se usar o nome do elemento que neste caso é "h2" e em seguida a 
+    <br>
+    cerquilha/sustenido/hashtag/octothorpe e depois o nome do seu id conforme exemplo:
+    <pre>
+    h2#com_id  {
+        color: rgb(37, 115, 115);
+    }
+    </pre>
+    </p>
+    <h2>exemplo sem id</h2>
+    <p>sem comentários</p>
+    <br>
+    <h2 class="com_classe">exemplo com classe</h2>
+    <p>para usar UMA classe em algum elemento no "html" usarei o seguinte comando:
+    <br>
+    <br>
+    &lt;h2 class="nome da classe"&gt;frase que receberá o atributo vindo do "css"&lt;/h2&gt;
+    <br>
+    &lt;h2 class="com_classe"&gt;exemplo com classe&lt;/h2&gt;
+    <br>
+    <br>
+    e para chamar essa classe no "css" deve-se usar um ponto(.) e em seguida o nome da classe e 
+    lembrando que a mesma classe pode ser aplicada a vários elementos no "html" e os id's não, segue exemplo no "css":
+    <pre>
+    .com_classe {
+        color: chartreuse;
+    }
+    </pre>
+    </p>
+    <h2 class="com_2classes com_classe">exemplo com duas classes</h2>
+    <p>neste exemplo foi usado duas classes, uma que muda a cor da letra e outra que muda a cor do fundo,
+    a forma que os atributos são chamados é diferente, segue exemplo no "html":
+    <br>
+    <br>
+    &lt;h2 class="com_2classes com_classe"&gt;exemplo com duas classes&lt;/h2&gt;
+    <br>
+    observe que no "html" foi colocado o nome da classe do exemplo anterior "com_classe" e também uma classe nova antes "com_2classes",
+    neste exemplo a ordem afeta nada e no "css" basta criar mais uma classe com o novo nome "com_2classes" e pronto o "html" vai usar automaticamente a outra que já está feita, segue exemplo no "css":
+    <pre>
+    .com_classe {
+        color: chartreuse;
+    }
+
+    .com_2classes {
+        background-color: black;
+    }
+    </pre>
+    </p>
+    <h2 id="mistura" class="com_2classes fonte">exemplo com id e classes no mesmo elemento</h2>
+    <p>neste exemplo como o nome já diz vou colocar um id e classes no mesmo elemento e as instruções são as mesmas dos anteriores 
+    segue exemplo do "html" e "css":
+    <br>
+    &lt;h2 id="mistura" class="com_2classes fonte"&gt;exemplo com id e classe no mesmo elemento&lt;/h2&gt;
+    <pre>
+    h2#mistura {
+        color: rgb(39, 194, 205);
+    }
+
+    .com_2classes {
+        background-color: black;
+    }
+
+    .fonte {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    </pre>
+    EXTRA: <span class="com_classe"> é possivel fazer span?</span> sugiro estudar um pouco sobre
+    </p>
+    
+</body>
+</html>

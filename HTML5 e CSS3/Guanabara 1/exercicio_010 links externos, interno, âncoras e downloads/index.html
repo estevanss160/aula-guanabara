@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links:</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>aqui estou usando uma palavra ou frase que ao clicar será usado um link que está vinculado nessa, usando o comando: 
+    <br>
+    &lt;a href="colocar o link aqui"&gt;palavra ou frase para o link&lt;/a&gt;
+    <br>
+    segue exemplo:
+    <br>
+    <br>
+    acessando o site de melhor jogo(até o momento)
+    <br>
+    &lt;a href="https://zenless.hoyoverse.com/pt-pt/main?utm_source=web&utm_medium=landingpage&utm_campaign=character"&gt;game zzz&lt;/a&gt;
+    <br>
+    <br>
+    acessando o site de melhor jogo(até o momento) <a href="https://zenless.hoyoverse.com/pt-pt/main?utm_source=web&utm_medium=landingpage&utm_campaign=character">game zzz</a>
+    <br><br>
+    Em seguida usarei a mesma frase, site e link, mas agora ao cliclar a página não se fechará porque abrirá outra e assim mantendo a original de onde o usuário saiu usando o comando: <br> &lt;a href="colocar o link aqui" target="_blank" rel="external"&gt;palavra ou frase para o link&lt;/a&gt;, <br>segue exemplo do novo comando:
+    <br><br>
+    acessando o site de melhor jogo(até o momento)&lt;a href="https://zenless.hoyoverse.com/pt-pt/main?utm_source=web&utm_medium=landingpage&utm_campaign=character" target="_blank" rel="external"&gt;game zzz&lt;/a&gt;<br><br>
+    acessando o site de melhor jogo(até o momento) <a href="https://zenless.hoyoverse.com/pt-pt/main?utm_source=web&utm_medium=landingpage&utm_campaign=character" target="_blank" rel="external">game zzz</a>
+    </p>
+    
+    <h1>Usando links internos:</h1>
+    <p>Esta é a primeira página, caso queira ir para a segunda terá duas opções de link, o primeiro link usará esta aba para redirecionamento e o segundo manterá a aba original e abrirá outra. Estou usando o seguinte comando para a primeira opção: <br>&lt;a href="nome da pagina ou colocar o link aqui"&gt;palavra ou frase para o link&lt;/a&gt; <br>segue exemplo:
+    <br><br>
+    O primeiro link: &lt;a href="pagina2.html"&gt;clique aqui&lt;/a&gt;
+    <br>
+    O primeiro link: <a href="pagina2.html">clique aqui</a>
+    <br><br>
+    A segunda opção usarei o seguinte comando: <br>&lt;a href="nome da pagina ou colocar o link aqui" target="_blank" rel="next"&gt;palavra ou frase para o link&lt;/a&gt; <br>segue exemplo:
+    <br><br>
+    O segundo link: &lt;a href="pagina2.html" target="_blank" rel="next"&gt;clique aqui&lt;/a&gt;
+    <br>
+    O segundo link: <a href="pagina2.html" target="_blank" rel="next">clique aqui</a>    
+    <br><br>
+    Exemplo de uma terceira página em uma subpasta usando o comando: <br>&lt;a href="nome da subpasta/nome da pagina ou link" target="_self" rel="next"&gt;palavra ou frase para o link&lt;/a&gt;<br>segue exemplo:
+    <br>
+    Ir para a terceira página: &lt;a href="teste_pagina/pagina3.html" target="_self" rel="next"&gt;clique aqui&lt;/a&gt;
+    <br>
+    Ir para a terceira página: <a href="teste_pagina/pagina3.html" target="_self" rel="next">clique aqui</a>, <br>neste caso você abrirá uma outra aba então lembre-se que os comandos da segunda página também são válidos, mas lembre de fazer a alteração necessária em (href="") porque o caminho é uma subpasta.
+    </p>
+
+    <h1>Links para downloads</h1>
+    <p>Usarei o seguinte comando para download de um arquivo pdf e uma imagem, mas antes do link terá a imagem do que será baixado, lembrando que o arquivo está em uma subpasta: <br>&lt;a href="nome da pasta/nome do arquivo.(pdf ou jpg)" download="nome do arquivo.(pdf ou jpg)" type="application/pdf ou image/jpeg"&gt;palavra ou frase para o link&lt;/a&gt;,<br>segue exemplo:
+    <br>
+    <br>
+    <ol>        
+        <li></li><img src="downloads/Golden Sign (feat. HOYO-MiX) TRADUÇÃO - Sãn-Z (Impressão)500.webp" alt="erro na imagem"><br>
+        &lt;a href="downloads/Golden Sign (feat. HOYO-MiX) TRADUÇÃO - Sãn-Z (Impressão).pdf" download="Golden Sign (feat. HOYO-MiX) TRADUÇÃO - Sãn-Z (Impressão).pdf" type="application/pdf"&gt;Baixar tradução da música: Golden Sing&lt;/a&gt;
+        <br>
+        <a href="downloads/Golden Sign (feat. HOYO-MiX) TRADUÇÃO - Sãn-Z (Impressão).pdf" download="Golden Sign (feat. HOYO-MiX) TRADUÇÃO - Sãn-Z (Impressão).pdf" type="application/pdf">Baixar tradução da música: Golden Sing</a>
+        <br><br>
+        <li></li>
+        <img src="downloads/astra-yao-relaxing-showing-off-her-feet-for-the-fans-v0-5q8pwxbo0ffe1-500.webp" alt="ela mesmo">
+        <br>
+        &lt;a href="nome da pasta/nome do arquivo.(pdf ou jpg)" download="nome do arquivo.(pdf ou jpg)" type="application/pdf ou image/jpeg"&gt;palavra ou frase para o link&lt;/a&gt;
+        <br>
+        <a href="downloads/astra-yao-relaxing-showing-off-her-feet-for-the-fans-v0-5q8pwxbo0ffe1.webp" download="astra-yao-relaxing-showing-off-her-feet-for-the-fans-v0-5q8pwxbo0ffe1.webp" type="image/webp">Baixar imagem da: Astra Yao</a>
+
+
+    </ol>
+    
+    </p>
+</body>
+</html>

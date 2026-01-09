@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+</head>
+<body>
+    <H1>USANDO INLINE</H1>
+    <h2 style="background-color: blue; color: white;">Exemplos de cores 1</h2>
+    <p>neste exemplo foi colocado um "fundo" azul e trocado a cor das letras usando o seguinte comando dentro de h2:
+    <br>
+    &lt;h2 style="background-color: nome da cor em inglês para alterar a cor do fundo; color: para trocar a cor da letra;"&gt;texto para receber a alteração&lt;/h2&gt;
+    <br>
+    agora segue exemplo do comando usando nomes:
+    <br>
+    &lt;h2 style="background-color: blue; color: white;"&gt;Exemplo de cores 1&lt;/h2&gt;
+    </p>
+    
+    <h2 style="background-color: #0000ff; color: #ffffff;">Exemplos de cores 2</h2>
+    <p>aqui foi aplicado o mesmo exemplo em h2, mas chamando as cores de uma forma diferente, segue o comando em hexadecimal:
+    <br>
+    &lt;h2 style="background-color: #0000ff; color: #ffffff;"&gt;Exemplo de cores 2&lt;/h2&gt;
+    </p>
+
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255)">Exemplos de cores 3</h2>
+    <p>neste exemplo foi usado a mesma estrutura dos anteriores, porém a forma de chamar a cor
+    <br>
+    é diferente, segue exemplo em decimal:
+    <br>
+    &lt;h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);"&gt;Exemplo de cores 3&lt;/h2&gt;
+    </p>
+
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de cores 4</h2>
+    <p>este exemplo é usado o "style" e "color", mas a forma de chamar a cor é com "hsl"
+    <br> 
+    que significa (HUE, STURATION, LIGHTNESS) ou em português (MATIZ, SATURAÇÃO, LUMINOSIDADE), segue exemplo do comando:
+    <br>
+    &lt;h2 style="background-color: hsl(240, 100%, 50%); color: hsl(1, 0%, 100%);"&gt;Exemplo de cores 4&lt;/h2&gt;
+    </p>
+
+    <p>considere que para cada uma das configurações existe também a possibilidade de transparência
+    <br>
+    por exemplo: "hsl" ficaria "hsla", "rgb" ficaria "rgba" e assim por diante e 
+    <br>
+    essa nova variável se encaixaria após as outras e vai de 0 à 1, segue exemplo:
+    <br>
+    hsl(240, 100%, 50%, 0.205) ou rgb(0, 0, 255, 0.258)
+    </p>
+</body>
+</html>

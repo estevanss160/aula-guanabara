@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right,#D92525, #8C1F28);
+        }
+
+        div#div2:hover {
+            background-position: center;
+            background-size: cover;
+            width: 90%;
+            background-image: 
+            url('imagem/yeahh-that-shining-golden-sign-v0-awk96b89yydf1.webp');
+        }
+
+        div {
+            font-size: larger;
+            background-color: #044040d7;
+            border-radius: 10px;
+            color: #F2F2F2;
+            box-shadow: 5px 5px 5px #591c21c1;
+            margin: auto;
+            width: 90%;
+            padding: 10px;
+        }
+
+        .bloco {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+
+        div#bloco1:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane dançando');
+        }
+
+        div#bloco2:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane dançando 2 100x173.gif');
+        }
+
+        div#bloco3:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane\ soquinho.gif');
+        }
+
+        /*div#bloco3:hover, div#bloco2:hover, div#bloco1:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane\ soquinho.gif');
+        }*/
+
+        p{
+            font-size: larger;
+            color: #F2F2F2;
+        }
+
+        pre {
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+        OBS: ":HOVER" SERÁ EXPLICADO NA PRÓXIMA AULA!
+        <br>
+        neste exemplo vamos utilizar algumas coisas novas: div e peseudo-classes;
+        <br>
+        primeiro a &lt;div&gt;, que está sendo usada agora, o conceito de uma "div" é
+        reunir uma quantidade de elementos do "html" como se fosse uma caixa e todos esses 
+        estão sujeitos aos atributos que essa "div" recebe 
+        <br>
+        <br>
+        </p>
+    </div>
+    <br>
+    <div id="div2">
+        <p>
+        pelo que entendi sobre Pseudo-classe é que tem ":" e isso possibilita fazer coisas interessantes como
+        interagir com o usuario quando ele passar o mouse por esta mensagem, mas aqui vai uma explicação do GOOGLE:
+        <br>
+        <br>
+        Pseudo-classes em HTML5 e CSS3 são palavras-chave (com dois pontos, :) que se adicionam a seletores para estilizar 
+        <br>
+        elementos com base em estados especiais, como :hover (mouse em cima), :visited (link já visitado), :focus (elemento com foco), 
+        <br>
+        ou sua posição/condição (ex: :first-child, :checked, :valid), permitindo estilos dinâmicos sem precisar de classes ou IDs extras 
+        <br>
+        no HTML, o que é poderoso para interatividade e formatação condicional.
+        </p>
+    </div>
+    <p>
+    AQUI VAI UM EXTRA: usar a função "display: inline-block;" pode alinhar como no seguinte exemplo:
+    </p>
+    <div id="bloco1" class="bloco"></div>
+    <div id="bloco2" class="bloco"></div>
+    <div id="bloco3" class="bloco"></div>
+    <p>
+    agora toma o código usado neste exemplo:
+    </p>
+    <pre>
+    &lt;style&gt;
+        body {
+            background-image: linear-gradient(to right,#D92525, #8C1F28);
+        }
+
+        div#div2:hover {
+            background-position: center;
+            background-size: cover;
+            width: 90%;
+            background-image: 
+            url('imagem/yeahh-that-shining-golden-sign-v0-awk96b89yydf1.webp');
+        }
+
+        div {
+            font-size: larger;
+            background-color: #044040d7;
+            border-radius: 10px;
+            color: #F2F2F2;
+            box-shadow: 5px 5px 5px #591c21c1;
+            margin: auto;
+            width: 90%;
+            padding: 10px;
+        }
+
+        .bloco {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+
+        div#bloco1:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane dançando');
+        }
+
+        div#bloco2:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane dançando 2 100x173.gif');
+        }
+
+        div#bloco3:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane\ soquinho.gif');
+        }
+
+        /*div#bloco3:hover, div#bloco2:hover, div#bloco1:hover {
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            background-image: url('gif/jane\ soquinho.gif');
+        }*/
+
+        p{
+            font-size: larger;
+            color: #F2F2F2;
+        }
+
+        pre {
+            font-size: larger;
+        }
+
+    &lt;/style&gt;
+    </pre>
+</body>
+</html>
