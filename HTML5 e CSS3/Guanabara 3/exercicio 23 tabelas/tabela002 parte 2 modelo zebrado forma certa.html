@@ -12,7 +12,6 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            position: relative;
         }
 
         td, th {
@@ -30,12 +29,6 @@
         thead, tfoot {
             background-color: gray;
             color: #ffff;
-        }
-        
-        thead > tr > td {
-            position: sticky;
-            top: -1px;
-            background-color: black;
         }
 
         td.num {
@@ -100,8 +93,24 @@
                 <td class="num">11.377.239</td>
             </tr>
             <tr>
+                <td>PERNAMBUCO</td>
+                <td>9.557.071</td>
+            </tr>
+            <tr>
+                <td>CEARÁ</td>
+                <td>9.132.078</td>
+            </tr>
+            <tr>
+                <td>PARÁ</td>
+                <td>8.6,2.865</td>
+            </tr>
+            <tr>
                 <td>SANTA CATARINA</td>
                 <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>MARANHÃO</td>
+                <td>7.705.181</td>
             </tr>
         </tbody>
         <tfoot>
@@ -111,5 +120,48 @@
             </tr>
         </tfoot>
     </table>
+    <p>
+        <pre>
+ &lt;style&gt;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: #ffff;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {/*no lugar dos parenteses pode ser usado "odd", "even" ou os numeros "2n", "3n",."4n"...*/
+            background-color: rgba(0, 0, 0, 0.227); /*forma correta de fazer lista "zebrada"*/
+        }
+
+        tbody > tr:nth-child(2n - 1) {/*no lugar dos parenteses pode ser usado "odd", "even" ou os numeros "2n", "3n",."4n"...*/
+            background-color: rgba(127, 255, 212, 0.227); /*forma correta de fazer lista "zebrada"*/
+        }
+    &lt;/style&gt;
+        </pre>
+    </p>
 </body>
 </html>
