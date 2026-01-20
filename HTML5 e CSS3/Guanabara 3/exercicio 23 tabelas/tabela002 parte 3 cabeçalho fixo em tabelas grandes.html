@@ -12,7 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            position: relative;
+            position: relative; /*parte do cabeçalho fixo*/
         }
 
         td, th {
@@ -31,17 +31,11 @@
             background-color: gray;
             color: #ffff;
         }
-
-        thead > tr > th {
-            position: sticky;
-            top: -1px;
-            background-color: gray;
-        }
         
         thead > tr > td {
-            position: sticky;
-            top: -1px;
-            background-color: gray;
+            position: sticky; /*parte do cabeçalho fixo*/
+            top: -1px; /*parte do cabeçalho fixo*/
+            background-color: gray; /*parte do cabeçalho fixo*/
         }
 
         td.num {
