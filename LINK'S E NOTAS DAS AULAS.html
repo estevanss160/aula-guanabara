@@ -6,7 +6,9 @@
     <title>links e notas usados</title>
     <style>
         body {
-            font-size: 20px;
+            font-size: 1vw;
+            background-color: black;
+            color: white;
         }
 
         h1 {
@@ -15,14 +17,19 @@
         }
 
         .bloco {
-            background-color: aqua;
+            background-color: rgb(255, 255, 255);
             display: inline-block;
             height: auto;
-            width: 200px;
+            width: 10vw;
+            color: black
         }
 
         .inbloco {
             text-align: center;
+        }
+
+        pre {
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -87,12 +94,72 @@
     </p>
 
     <h1>SELETORES PERSONALIZADOS</h1>
-    <p id='seletores'>
+    <p>
         #  = id <br>
         .  = classe <br>
         :  = pseudo-classe <br>
         :: = pseudo-elemento <br>
         >  = filho <br>
+
+        qual a diferença dos seguintes codigos em css3:
+            <pre>
+    thead > tr > td {
+        1. Seletor de Descendência Direta (Filho)
+
+        O que faz: Aplica o estilo apenas às células (&lt;td&gt;) que são filhas diretas de uma linha (&lt;tr&gt;), que por sua vez deve ser filha direta de um cabeçalho de tabela (&lt;thead&gt;).
+
+        Relação: É uma hierarquia rígida. Se houver um &lt;td&gt; dentro de um &lt;tbody&gt;, este seletor não o afetará.
+
+        Uso comum: Quando você quer estilizar especificamente o conteúdo do cabeçalho da tabela sem afetar o resto dela.
+    }
+
+    thead, tr, td {
+        2. Seletor de Agrupamento (Múltiplos)
+
+        O que faz: A vírgula funciona como um "e". O estilo será aplicado a todos os elementos &lt;thead&gt;, a todos os &lt;tr&gt; e a todos os &lt;td&gt; do seu documento, 
+        independentemente de onde estejam.
+
+        Relação: Não há hierarquia. São três seletores independentes compartilhando a mesma regra
+    }
+
+    strothead > tr, td {
+        3. Mistura de Hierarquia e Agrupamento (Caso 1)
+
+        O que faz: Aqui temos dois grupos distintos separados pela vírgula:
+
+        thead > tr: Aplica às linhas que são filhas diretas do &lt;thead&gt;.
+
+        td: Aplica a todos os &lt;td&gt; da página (mesmo os que estão fora do &lt;thead&gt;).
+
+        Resultado: As linhas do cabeçalho e todas as células da tabela (corpo e cabeçalho) receberão o estilo.
+    }
+
+    thead, tr > td {
+        4. Mistura de Hierarquia e Agrupamento (Caso 2)
+
+        O que faz: Também divide em dois grupos:
+
+        thead: Aplica ao elemento de cabeçalho da tabela.
+
+        tr > td: Aplica a todas as células que são filhas diretas de uma linha.
+
+        Resultado: O elemento &lt;thead&gt; será estilizado, assim como praticamente todos os &lt;td&gt; da sua página, já que quase todo &lt;td&gt; é filho de um &lt;tr&gt;.
+    }
+
+    thead tr td {
+        5. Este é o chamado Seletor de Descendência (espaço em branco).
+
+        Diferente do símbolo de maior (>), que exige que o elemento seja um filho direto, o espaço é muito mais "liberal".
+
+        O que ele faz: Este seletor aplica o estilo a qualquer &lt;td&gt; que esteja dentro de um &lt;tr&gt;, desde que esse &lt;tr&gt; esteja dentro de um &lt;thead&gt;.
+
+        A diferença crucial entre > e (espaço): thead > tr (Filho Direto): O tr precisa ser o filho imediato do thead. Se houvesse qualquer outra tag envolvendo o tr, 
+        o seletor deixaria de funcionar.
+
+        thead tr (Descendente): O tr pode estar em qualquer nível de profundidade dentro do thead. O CSS vai "garimpar" o documento até encontrar um tr que tenha um 
+        thead como ancestral (pai, avô, bisavô, etc.).
+    }
+            </pre>
     </p>
 
     <h1>Anatomia De Uma Caixa</h1>
@@ -109,6 +176,7 @@
         <br>
         outline = fica entre a margin e o border
     </p>
+
     <h1>Tipos De Caixa</h1>
     <div class="bloco">
     <h2 class="inbloco">box-level</h2>

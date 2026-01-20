@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: #ffff;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        .marcação {
+            background-color: rgba(0, 0, 0, 0.227); /*forma errada de fazer lista "zebrada"*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso em tabelas grandes</h1>
+    <pre>
+    &lt;!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    --&gt;
+    </pre>
+    <table>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr class="marcação">
+                <td>MINAS GERAIS</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr class="marcação">
+                <td>BAHIA</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>PARANÁ</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr class="marcação">
+                <td>RIO GRANDE DO SUL</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>SANTA CATARINA</td>
+                <td class="num">7.164.788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL DE HABITANTES</th>
+                <td class="num">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

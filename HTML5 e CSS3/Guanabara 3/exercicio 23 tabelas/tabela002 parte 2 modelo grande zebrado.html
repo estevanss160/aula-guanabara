@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,13 +31,23 @@
             background-color: gray;
             color: #ffff;
         }
+        
+        thead > tr > td {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
 
         td.num {
             text-align: right;
         }
 
-        .marcação {
-            background-color: rgba(0, 0, 0, 0.227);
+        tbody > tr:nth-child(2n) {/*no lugar dos parenteses pode ser usado "odd", "even" ou os numeros "2n", "3n",."4n"...*/
+            background-color: rgba(0, 0, 0, 0.227); /*forma correta de fazer lista "zebrada"*/
+        }
+
+        tbody > tr:nth-child(2n - 1) {/*no lugar dos parenteses pode ser usado "odd", "even" ou os numeros "2n", "3n",."4n"...*/
+            background-color: rgba(127, 255, 212, 0.227); /*forma correta de fazer lista "zebrada"*/
         }
     </style>
 </head>
@@ -68,7 +79,7 @@
                 <td>SÃO PAULO</td>
                 <td class="num">45.919.049</td>
             </tr>
-            <tr class="marcação">
+            <tr>
                 <td>MINAS GERAIS</td>
                 <td class="num">21.168.791</td>
             </tr>
@@ -76,7 +87,7 @@
                 <td>RIO DE JANEIRO</td>
                 <td class="num">17.264.943</td>
             </tr>
-            <tr class="marcação">
+            <tr>
                 <td>BAHIA</td>
                 <td class="num">14.873.064</td>
             </tr>
@@ -84,7 +95,7 @@
                 <td>PARANÁ</td>
                 <td class="num">8.602.865</td>
             </tr>
-            <tr class="marcação">
+            <tr>
                 <td>RIO GRANDE DO SUL</td>
                 <td class="num">11.377.239</td>
             </tr>
