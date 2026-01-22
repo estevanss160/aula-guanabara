@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tabela (Produtos x Meses)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&family=Inter:wght@400;600&display=swap');
+
+    :root{
+      --bg0:#0b0c10;
+      --bg1:#0f1220;
+      --ink:#f2f3f7;
+      --muted:#b9bfd1;
+      --line:rgba(255,255,255,.10);
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.03);
+      --accent:#ffcf5a;
+      --accent2:#7cf7d4;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:
+        radial-gradient(900px 600px at 18% 12%, rgba(255,207,90,.20), transparent 55%),
+        radial-gradient(700px 500px at 82% 18%, rgba(124,247,212,.16), transparent 58%),
+        radial-gradient(900px 700px at 50% 110%, rgba(140,120,255,.14), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    }
+
+    header{
+      padding:clamp(20px, 4vw, 44px) clamp(16px, 5vw, 56px) 14px;
+    }
+    h1{
+      margin:0;
+      font-family:Fraunces, serif;
+      font-size:clamp(22px, 3.2vw, 42px);
+      letter-spacing:-0.02em;
+      line-height:1.05;
+    }
+    .sub{
+      margin:10px 0 0;
+      color:var(--muted);
+      max-width:68ch;
+      font-size:clamp(14px, 1.6vw, 16px);
+    }
+
+    main{
+      padding:0 clamp(16px, 5vw, 56px) clamp(28px, 6vw, 64px);
+    }
+
+    .table-wrap{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, var(--panel), var(--panel2));
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:
+        0 18px 60px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.06);
+    }
+
+    .scroll{
+      overflow:auto;
+      -webkit-overflow-scrolling:touch;
+    }
+
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      min-width: 980px; /* garante espaço para 13 colunas; rola no mobile */
+    }
+
+    thead th{
+      position:sticky;
+      top:0;
+      z-index:2;
+      text-align:left;
+      font-weight:600;
+      color:rgba(242,243,247,.92);
+      background:
+        linear-gradient(180deg, rgba(15,18,32,.95), rgba(15,18,32,.72));
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+      padding:14px 14px;
+      font-size:13px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+
+    tbody td{
+      padding:14px 14px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      color:rgba(242,243,247,.88);
+      background:transparent;
+    }
+
+    tbody tr:hover td{
+      background:rgba(255,255,255,.03);
+    }
+
+    /* primeira coluna "Nome" destacada */
+    th:first-child, td:first-child{
+      position:sticky;
+      left:0;
+      z-index:1;
+      background:
+        linear-gradient(90deg, rgba(15,18,32,.98), rgba(15,18,32,.84));
+      border-right:1px solid rgba(255,255,255,.10);
+    }
+    thead th:first-child{
+      z-index:3;
+      color:rgba(255,255,255,.95);
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight:600;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, var(--accent), rgba(255,207,90,.25));
+      box-shadow:0 0 0 4px rgba(255,207,90,.10);
+      flex:0 0 auto;
+    }
+
+    caption{
+      caption-side:top;
+      text-align:left;
+      padding:14px 14px 0;
+      color:rgba(242,243,247,.88);
+      font-weight:600;
+      letter-spacing:.01em;
+    }
+
+    .hint{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      padding:12px 14px 14px;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .hint svg{opacity:.9}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Produtos × Meses (HTML5)</h1>
+    <p class="sub">Tabela com <code>&lt;thead&gt;</code> contendo a coluna <strong>Nome</strong> e 12 colunas para os meses. No <code>&lt;tbody&gt;</code>, os produtos aparecem na primeira coluna (uma única coluna com nomes; as colunas de meses ficam vazias para preenchimento).</p>
+  </header>
+
+  <main>
+    <section class="table-wrap" aria-label="Tabela de produtos e meses do ano">
+      <div class="scroll" role="region" aria-label="Tabela rolável horizontalmente">
+        <table>
+          <caption>Planejamento anual</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Janeiro</th>
+              <th scope="col">Fevereiro</th>
+              <th scope="col">Março</th>
+              <th scope="col">Abril</th>
+              <th scope="col">Maio</th>
+              <th scope="col">Junho</th>
+              <th scope="col">Julho</th>
+              <th scope="col">Agosto</th>
+              <th scope="col">Setembro</th>
+              <th scope="col">Outubro</th>
+              <th scope="col">Novembro</th>
+              <th scope="col">Dezembro</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><span class="pill"><span class="dot" aria-hidden="true"></span>Produto A</span></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><span class="pill"><span class="dot" aria-hidden="true" style="background:radial-gradient(circle at 30% 30%, var(--accent2), rgba(124,247,212,.25)); box-shadow:0 0 0 4px rgba(124,247,212,.10);"></span>Produto B</span></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><span class="pill"><span class="dot" aria-hidden="true" style="background:radial-gradient(circle at 30% 30%, #c6a7ff, rgba(198,167,255,.25)); box-shadow:0 0 0 4px rgba(198,167,255,.10);"></span>Produto C</span></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><span class="pill"><span class="dot" aria-hidden="true" style="background:radial-gradient(circle at 30% 30%, #ff7aa2, rgba(255,122,162,.25)); box-shadow:0 0 0 4px rgba(255,122,162,.10);"></span>Produto D</span></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="hint">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>No celular, deslize horizontalmente para ver todos os meses.</span>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Sem interações obrigatórias para este pedido.
+  </script>
+</body>
+</html>
