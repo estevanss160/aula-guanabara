@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 650px;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+
+        ul {
+            columns: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Iframe</h1>
+
+    <ul>
+        <li><a href="paginas iframe002 e iframe003/desafio 009 do capitulo 11 aula 7/desafio 009.html" target="frame">desafio 009</a></li>
+        <li><a href="paginas iframe002 e iframe003/desafio 10 do capítulo 16 aula 8/tentativa sozinho/index.html" target="frame">desafio 010</a></li>
+        <li><a href="paginas iframe002 e iframe003/desafio 12/tentativa sozinho/index.html" target="frame">desafio 012</a></li>
+        <li><a href="paginas iframe002 e iframe003/hover.html" target="frame">boneca russa</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quasi at aspernatur soluta, repudiandae, quidem debitis corporis dolore optio similique eum eos dolores in necessitatibus. Repellendus illo accusamus tempora. Ab!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores fugit nostrum ea culpa veniam amet? Officiis, cupiditate, repellat totam commodi maxime ullam voluptatibus, culpa nemo ipsam sit pariatur tempore?
+    </p>
+
+    <iframe id="tela" name="frame" srcdoc="
+    <h1>ESCOLHA UMA DAS OPÇÕES ACIMA</h1>
+    <p>
+<pre>
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 650px;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+
+        ul {
+            columns: 2;
+        }
+</pre>
+
+    </p>" frameborder="0" scolling="yes">
+        Infelizmente sua torradeira de navegador não tem suporte para Iframe
+    </iframe>
+    
+</body>
+</html>
