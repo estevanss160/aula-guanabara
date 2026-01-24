@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+
+
+        <iframe src="paginas/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+            sua torradeira de navegador não suporta Iframe
+        </iframe>
+
+    <p>
+        o comando (sandbox="sandbox") liga ou desliga as configurações de segurança para que o usuário não tenha interação com o que está
+        <br>
+        no iframe por exemplo cadastrar-se; o comando (referrerpolicy="no-referrer") vai bloquear a coleta de dados feita pelo site que está no iframe
+        <br>
+        <br>
+        existem outras configurações/personalização de segurança que podem ser colocadas no (sandbox=" ") como por exemplo: "allow-same-origin allow-forms allow-scripts" 
+        <br>
+        que deixará apenas as páginas que estão no mesmo servidor liberadas para interação.
+        <pre>
+            &lt;iframe src="paginas/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"&gt;
+                sua torradeira de navegador não suporta Iframe
+            &lt;/iframe&gt;
+        </pre>
+    </p>
+
+</body>
+</html>
