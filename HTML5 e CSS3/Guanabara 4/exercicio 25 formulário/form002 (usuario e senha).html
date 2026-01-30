@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on"> <!--autocomplete="off" serve para o seu navegador não mostrar opções quando for preencher o formulário. method="post" evita que as informações apareçam na URL-->
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label> 
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <p>
+        required: serve para bloquear a tela até que os dados sejam preenchidos.
+        <br>
+        <br>
+        minlength="5": serve para determinar o mínimo de caracteres.
+        <br>
+        <br>
+        maxlength="30": serve para determinar o máximo de caracteres.
+        <br>
+        <br>
+        size="10": serve para determinar quantos caracteres vai aparecer no bloco.
+        <br>
+        <br>
+        placeholder="Nome do Usuário": serve para marcar dentro do bloco o que deve ser inserido, serve mais como um auxílio.
+        <br>
+        <br>
+        autocomplete="username" ou autocomplete="current-password"...: colocar o autocomplete="" na tag "form" é diferente de colocar na tag "input" e aparentemente funcionam independente.
+        <br>
+        <br>
+        autocomplete="off" serve para o seu navegador não mostrar opções quando for preencher o formulário. method="post" evita que as informações apareçam na URL.
+        <br>
+        <br>
+        Em todo formulario deve ter a tag LABEL onde o "for" vai se referir ao "id" que está no "input" respectivo.
+        A tag &lt;label&gt; no HTML5 serve para definir rótulos (legendas) para elementos de formulário (&lt;input&gt;, &lt;textarea&gt;, etc.)
+    </p>
+</body>
+</html>

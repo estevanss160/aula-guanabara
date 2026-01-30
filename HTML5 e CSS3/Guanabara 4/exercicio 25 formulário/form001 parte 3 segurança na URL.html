@@ -12,12 +12,19 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="formulario.php" method="post" autocomplete="off"> <!--autocomplete="off" serve para o seu navegador não mostrar opções. method="post" evita que as informações apareçam na URL-->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete="off" serve para o seu navegador não mostrar opções quando for preencher o formulário. method="post" evita que as informações apareçam na URL-->
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="enviar"></p>
     </form>
+    <p>
+        autocomplete="off" serve para o seu navegador não mostrar opções quando for preencher o formulário. method="post" evita que as informações apareçam na URL
+        <br>
+        <br>
+        Em todo formulario deve ter a tag LABEL onde o "for" vai se referir ao "id" que está no "input" respectivo.
+        A tag &lt;label&gt; no HTML5 serve para definir rótulos (legendas) para elementos de formulário (&lt;input&gt;, &lt;textarea&gt;, etc.)
+    </p>
 </body>
 </html>
