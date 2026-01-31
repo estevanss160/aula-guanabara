@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        th, td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Adiministrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <p>
+        a tag "select" cria uma lista que é possível selecionar.
+        <br>
+        <br>
+        existe nesse código um LABEL atributo e um elemento, segue exemplo:
+        <br>
+        elemento:  &lt;label for="iest">Estado: &lt;/label>
+        <br>
+        atributo: &lt;optgroup label="Região Sudeste">&lt;/optgroup>. neste caso ele está colocando um "título" e "separando" a lista dentro da separação do comando "optgroup"
+        <br>
+        <br>
+        existe nesse código um SELECT atributo e um elemento, segue exemplo:
+        <br>
+        elemento: &lt;select name="estado" id="iest">&lt;/select>
+        <br>
+        atributo: &lt;option value="" selected>--- Escolha ---&lt;/option>. neste caso ele está "substituindo" a tag "value", mas existe a diferença que o "value" vai pré preencher e o "select" faz outra coisa, vai estudar.
+        <br>
+        <br>
+        o comando "optgroup" serve para, neste caso, separar a lista que o select criou
+        <br>
+        <br>
+        a lista Profissão, diferente da lista de Estado, tem a possibilidade de escrever e não só selecionar e a diferença é que tem o comando "input"
+    </p>
+    <table>
+        <caption>Comparativo Rápido</caption>
+        <thead>
+            <tr>
+                <th>Característica</th>
+                <th>select</th>
+                <th>datalist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entrada de dados</td>
+                <td>Apenas clique/seleção.</td>
+                <td>Digitação + Sugestão.</td>
+            </tr>
+            <tr>
+                <td>Flexibilidade</td>
+                <td>Rígida (Siga a lista).</td>
+                <td>Flexível (Livre, com dicas).</td>
+            </tr>
+            <tr>
+                <td>Interface</td>
+                <td>Abre um menu drop-down fixo.</td>
+                <td>Filtra as opções conforme você digita.</td>
+            </tr>
+            <tr>
+                <td>Agrupamento</td>
+                <td>Suporta &lt;optgroup> (como você usou).</td>
+                <td>Não suporta agrupamentos visuais (labels).</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
