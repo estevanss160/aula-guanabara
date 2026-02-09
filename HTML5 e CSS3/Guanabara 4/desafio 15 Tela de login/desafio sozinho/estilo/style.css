@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* TELEFONE */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #5F2C82;
+    margin-top: 32%;
+}
+
+main {
+    margin: auto;
+    width: 40vw;
+    height: 56vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+div#imagem-gif {
+    background-image: url(../imagens-e-gifs/burnice-burnice-go\ gif1.gif);
+    background-size: 100% 100%;
+    border-radius:  20px 20px 0 0;
+    margin: auto;
+    width: 100%;
+    height: 22vh;
+}
+
+div#login {
+    margin: 0 8px;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+p#login {
+    margin: 9px 0 9px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    font-size: 2em;
+}
+
+p#texto {
+    margin-bottom: 5px;
+    text-align:justify;
+}
+
+.formulario {
+    background-color: #5F2C82;
+    border-radius: 8px;
+    padding: 2px 0 0 0;
+}
+
+span#person, span#vpn_key{
+    color: white;
+    font-size: 2.9em;
+}
+
+input#iemail, input#isen {
+
+    background-color: aquamarine;
+    height: 35px;
+    background-size: 100%;
+    width: 80%;
+    border-radius: 10px;
+}
