@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Todas As Demais Mídias */
+
+/*
+Typical Device Breakpoints
+--------------------------
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Grandes Telas: acima de 1.200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+        background-attachment: fixed;
+        margin-top: 30vh;
+    }
+
+    main {
+        margin: auto;
+        min-width: 80vw;
+        height: 40vh;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    div {
+        display: inline-block;
+    }
+
+    div#login {
+        background-size: 100% 100%;
+        width: 70%;
+        height: 100%;
+    }
+
+    div#imagem-gif {   
+        background-image: url(../imagens-e-gifs/burnice-burnice-go\ gif1.gif);
+        background-size: 100% 100%; /* serve para deixar a imagem/gif esticado*/
+        border-radius:  20px 0px 0px 20px;
+        height: 100%;
+        width: 30%;
+    }
+
+    .formulario, input#entrar, input#esqueciASenha, input#iemail, input#isen {
+        width: 100%;
+    }
+
+    input#iemail, input#isen {
+        height: 35px;
+        width: 91%;
+    }
+
+    p#titulo-login {
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    }
+
+    p#texto {
+    font-size: bolder;
+    margin-bottom: 0px;
+    text-align: left;
+    }
+}
+
+@media screen and (min-width: 992px) { /* DESKTOP */
+    body {
+        background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
+        background-attachment: fixed;
+        margin-top: 25vh;
+    }
+
+    main {
+        margin: auto;
+        min-width: 950px;
+        height: 50vh;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    div#imagem-gif {
+        flex: 1; /* Faz a imagem ocupar o espaço disponível proporcionalmente */    
+        background-image: url(../imagens-e-gifs/burnice-burnice-go\ gif2.gif);
+        background-size: 100% 100%; /* serve para deixar a imagem/gif esticado*/
+        border-radius:  0 20px 20px 0;
+     
+        width: 10%;
+        height: 100%; /* Agora ela ocupa a altura total do main */
+    }
+
+    div#login {
+        flex: 1; /* Faz o login ocupar a outra metade */
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centraliza o conteúdo do login verticalmente */
+    }
+
+    .formulario, input#entrar, input#esqueciASenha {
+        width: 100%;
+    }
+
+    input#iemail, input#isen {
+        height: 35px;
+        width: 91%;
+    }
+
+    p#titulo-login {
+    margin: -30px 0 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    font-size: 2em;
+    }
+
+    p#texto {
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: left;
+    }
+}
+
