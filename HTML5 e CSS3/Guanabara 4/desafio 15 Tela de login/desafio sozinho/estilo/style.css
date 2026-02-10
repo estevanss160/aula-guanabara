@@ -68,6 +68,9 @@ p#texto {
     border-color: none;
     border-radius: 8px;
     margin: 5px 0 0 0;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    display: flex;
 }
 
 img#person, img#vpn_key {
@@ -78,9 +81,10 @@ img#person, img#vpn_key {
 input#iemail, input#isen {
     background-color: aquamarine;
     border: none;
-    height: 35px;
-    width: 83%;
+    height: 36px;
+    width: 89%;
     border-radius: 10px;
+
 }
 
 input#entrar {
